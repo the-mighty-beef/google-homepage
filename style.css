@@ -21,9 +21,34 @@ time, mark, audio, video {
 
 html, body {
 	height: 100%;
-	padding: 0;
+}
+
+ul {
+	list-style-type: none;
 	margin: 0;
-	font-family: Arial;
+	padding: 0;
+}
+
+li {
+	display: inline;
+	text-align: center;
+	padding: 13px;
+}
+
+a {
+	text-decoration: none;
+	color: #666666;
+	font-family: arial;
+	font-size: 13px;
+	vertical-align: middle;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	vertical-align: middle;
 }
 
 #wrap {
@@ -33,6 +58,10 @@ html, body {
 #main {
 	overflow: auto;
 	padding-bottom: 40px; /* must be same height as the footer */
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 200px;
 }
 
 #footer {
@@ -45,28 +74,46 @@ html, body {
 	line-height: 40px;
 }
 
-#footer-left {
-	float: left;
-	margin-left: 20px;
-}
-
-#footer-right {
-	float: right;
-	margin-right: 20px;
-}
-
 #header {
 	position: relative;
 	margin-bottom: -30px;
 	height: 30px;
 	clear: both;
-	background-color: #ccccff
 }
 
-a {
-	color: #666666;
-	text-decoration: none;
-	padding: 5px 15px 5px 8px;
-	display: inline;
-	font-size: small;
+#footer-left {
+	margin-left: 18px;
+	float: left;
+}
+
+#footer-right {
+	margin-right: 18px;
+	float: right;
+}
+
+#nav {
+	padding: 8px;
+	line-height: 40px;
+	margin-right: 18px;
+	float: right;
+}
+
+input {
+	margin-top: 30px;
+	width: 52em;
+	height: 35px;
+}
+
+.button {
+	margin: 30px 3px;
+	display: inline-block;
+	background-color: #f5f5f5;
+	font-weight: bolder;
+	padding: 10px 15px;
+	border-radius: 2px;
+}
+
+.button:hover {
+	border: 1px solid #999999;
+	background-color: #f8f8f8;
 }
